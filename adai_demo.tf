@@ -8,15 +8,6 @@ terraform {
     }
   }
 }
-
-provider "oci" {
-  tenancy_ocid = "ocid1.tenancy.oc1..aaaaaaaa6yfgaxkv573qdjzpl5pyhlx4aqxgrkud5qz4jbsr4epujxepa7na"
-  user_ocid    = "ocid1.user.oc1..aaaaaaaarp66z2dlddtyf2od6pdbafmda44qw5mnp3j2c74hysb6dbdvlv6q"
-  fingerprint      = var.fingerprint
-  private_key_path = var.private_key_path
-  region = "eu-zurich-1"
-}
-
 variable fingerprint {
   default = "9f:23:85:d6:4b:a3:9d:82:b7:a6:dd:9e:ef:31:da:ba"
 }
